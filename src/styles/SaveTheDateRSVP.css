@@ -1,0 +1,176 @@
+/* ============================================
+   SAVE THE DATE RSVP - Nuevo Diseño
+   ============================================ */
+
+.std-rsvp-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.std-rsvp-box {
+  background: #434a21;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.std-rsvp-title {
+  display: inline-flex;
+  gap: 6px;
+  align-items: baseline;
+  font-size: clamp(1.6rem, 4.2vw, 2.2rem);
+  margin: 0 0 10px 0;
+  letter-spacing: 0.5px;
+}
+
+.std-rsvp-title-main {
+  font-family: 'The Seasons', serif;
+  font-weight: 400;
+  color: var(--std-white, #ffffff);
+}
+
+.std-rsvp-title-punct {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: var(--std-white, #ffffff);
+}
+
+.std-rsvp-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 30px 0;
+  font-weight: 300;
+}
+
+.std-rsvp-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 30px;
+  background: var(--std-white, #ffffff);
+  font-family: 'The Seasons', serif;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: var(--std-text-dark, #2c2c2c);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.std-rsvp-input::placeholder {
+  color: rgba(44, 44, 44, 0.5);
+}
+
+.std-rsvp-input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.std-rsvp-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.std-rsvp-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.std-rsvp-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-family: 'The Seasons', serif;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.std-rsvp-btn.yes {
+  background: var(--std-white, #ffffff);
+  color: #434a21;
+}
+
+.std-rsvp-btn.yes:hover:not(:disabled) {
+  background: var(--std-light-cream, #f5f5f0);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.std-rsvp-btn.no {
+  background: transparent;
+  color: var(--std-white, #ffffff);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.std-rsvp-btn.no:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--std-white, #ffffff);
+  transform: translateY(-2px);
+}
+
+.std-rsvp-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Mensaje de éxito */
+.std-rsvp-success {
+  padding: 20px;
+  text-align: center;
+}
+
+.std-success-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--std-white, #ffffff);
+  color: #434a21;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.std-success-icon.declined {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--std-white, #ffffff);
+}
+
+.std-success-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: var(--std-white, #ffffff);
+  margin: 0 0 10px 0;
+  font-weight: 500;
+}
+
+.std-success-subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  font-weight: 300;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .std-rsvp-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .std-rsvp-btn {
+    flex: 1;
+    max-width: 200px;
+  }
+}

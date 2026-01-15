@@ -1,0 +1,49 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.example
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.vercel
+.env*.local
+
+# Archivos SQL temporales (desarrollo/debugging)
+ARREGLAR_RLS_URGENTE.sql
+PASO2_DESACTIVAR_RLS_DEV.sql
+PASO3_REACTIVAR_RLS_DEPLOY.sql
+VERIFICAR_RLS_REAL.sql
+DESACTIVAR_RLS.sql
+REACTIVAR_RLS.sql
+*_TEMP.sql
+*_DEV.sql
+*_DEBUG.sql
+
+# SQLite databases
+*.sqlite
+*.sqlite3
+*.db
