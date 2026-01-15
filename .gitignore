@@ -47,3 +47,4 @@ REACTIVAR_RLS.sql
 *.sqlite
 *.sqlite3
 *.db
+*.sql

@@ -18,7 +18,8 @@ if (!supabaseUrl || !supabaseAnonKey) {
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 const isDev = import.meta.env.DEV;
-const USE_API = import.meta.env.PROD;
+// Deshabilitado temporalmente - usar siempre Supabase directo
+const USE_API = false; // import.meta.env.PROD;
 
 console.log(`🔧 Modo: ${isDev ? 'DESARROLLO' : 'PRODUCCIÓN'} | APIs: ${USE_API ? '/api/*' : 'Supabase directo'}`);
 
